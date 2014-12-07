@@ -1,15 +1,107 @@
-/* Your Website Styles */
+/* Credit Goes to http://codepen.io/oloman/pen/Gynoq, This gallery design is not mine, altered to fit my style */
 
-
-
-
-
-
-/* Show Grid */
-.showgrid {
-	background: url("../img/grid-bg.png") repeat-y;
+html, body {
+  margin: 0;
+  padding:0;
+  background: #B1FFA7;
 }
 
+ul.acordeon * {
+  font-family: Arial, sans-serif;
+  -webkit-transition: all .6s ease-in-out;
+  -moz-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+/* Contenedor general */
+ul.acordeon {
+  width: 100%; /* Personalizar sncho total */
+  overflow: hidden;
+  padding: 0;
+  background: #8F2250;
+  text-align: center;
+  list-style: none;
+  font-size: 0;
+  box-shadow: 0 0 10px #333;
+}
+/* Cada elemento */
+ul.acordeon li {
+  position: relative;
+  display: inline-block;
+  *display: inline; zoom: 1; /* IE7 */
+  width: 10%; 
+  height:0;
+  padding-bottom: 40%; /* Ratio aspecto imagen = (height*X)/width */
+  background: #eee;
+  text-align: center;
+  box-shadow: -2px 0px 8px #999;
+}
+/* Títulos pestañas */
+ul.acordeon li h4 {
+  position: relative;
+  top: 5%;
+  z-index: 1;
+  margin: 0;
+  font-size: 18px;
+  text-align: left;
+  text-transform: uppercase;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: 10% 120%;
+  -moz-transform-origin: 10% 120%;
+  transform-origin: 10% 120%;
+  white-space: nowrap;
+}
+/* Contenido inicialmente oculto */
+ul.acordeon li a, ul.acordeon li img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  *display: inline; zoom: 1; /* IE7 */
+  width: 0;
+  padding:0;
+  background: #333;
+}
+/* Hover: Desplegamos elemento aumentando su ancho */
+ul.acordeon li:hover {
+  width: 60%; /* 100 - 10*(nºelem-1) // X=60 para ratio imagen */ 
+  background: #333;
+}
+/* Hover: Hacemos que el título recupere la horizontal y le ponemos un fondo */
+ul.acordeon li:hover h4 {
+  padding-left: 10px;
+  background: rgba(143,34,80,.8);
+  color: #eee;
+  -webkit-transform: none;
+  -moz-transform: none;
+  transform: none;
+}
+/* Hover: Expandimos el contenido */
+ul.acordeon li:hover a, ul.acordeon li:hover a img {
+  width: 100%; 
+}
+/* Ajustes para resoluciones pequeñas */
+@media(max-width:600px) {
+  ul.acordeon li h4 {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+}
+
+/* VARIACIONES PARA CONSEGUIR QUE EL MENU OCUPE INICIALMENTE TODO EL ANCHO 
+ul.acordeon li {
+  width: 20%;
+}
+ul.acordeon:hover li {
+  width: 10%;
+}
+ul.acordeon li:hover {
+  width: 60%;
+}
+*/
+
+/*  Primary Header */
 
 h1 {
   font-family: 'Nova Mono', sans-serif;
@@ -19,7 +111,7 @@ h1 {
 
 h2 {
   font-family: 'Josefin Sans', sans-serif;
-  color: #6AE063;
+  color: #066600;
   font-size: 4em;
 }
 
@@ -34,7 +126,7 @@ h3 {
 p {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2em;
-  color: #6AE063;
+  color: #066600;
 }
 
 /* Baseline Links */
@@ -61,10 +153,31 @@ section {
   margin: 20px 0;
 }
 
+.color-1,
+.color-2,
+.color-3,
+.color-4,
+.color-5,
+.pattern-1,
+.pattern-2,
+.pattern-3 {
+  border: 1px solid #000;
+  float: left;
+  margin: 0 10px;
+  height: 50px;
+  width: 50px;
+}
+
+
+/* Show Grid */
+.showgrid {
+  background: url("../img/grid-bg.png") repeat-y;
+}
+
 body {
   background: url("../img/water.jpg");
 }
 
 div.container {
-  background: #066600;
+  background: #B1FFA7;
 }
