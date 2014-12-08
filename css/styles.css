@@ -7,7 +7,7 @@ html, body {
 }
 
 ul.acordeon * {
-  margin-top: 15px;
+  margin-top: 0px;
   font-family: 'Josefin Sans', sans-serif;
   color: #FF69B5;
   -webkit-transition: all .6s ease-in-out;
@@ -142,12 +142,7 @@ a:hover {
 }
 
 
-/* Set Your Own Margin & Padding */
-h2, h3, p {
-  margin-left: 20px;
-}
 
-/* Layout for Style Tile*/
 section {
   margin: 20px 0;
 }
@@ -171,6 +166,15 @@ body {
 
 div.container {
   background: #B1FFA7;
+}
+
+footer p {
+  text-align: center; 
+  background-color: #FF69B5;
+  font-color: #066600;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /* Ajustes para resoluciones pequeñas */
