@@ -24,6 +24,7 @@ ul.acordeon {
   list-style: none;
   font-size: 0;
   box-shadow: 0 0 10px #B1FFA7;
+
 }
 /* Cada elemento */
 ul.acordeon li {
@@ -37,6 +38,7 @@ ul.acordeon li {
   text-align: center;
   box-shadow: -2px 0px 8px #B1FFA7;
   overflow: hidden;
+
 }
 /* Títulos pestañas */
 ul.acordeon li h4 {
@@ -47,7 +49,7 @@ ul.acordeon li h4 {
   font-size: 25px;
   text-align: left;
   text-transform: uppercase;
-  -webkit-transform: rotate(360deg);
+  -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   transform: rotate(90deg);
   -webkit-transform-origin: 10% 120%;
@@ -62,10 +64,10 @@ ul.acordeon li a, ul.acordeon li img {
   right: 0;
   display: inline-block;
   *display: inline; zoom: 1; /* IE7 */
-  width: 0;
-  padding:0;
-  background: #333;
+  transform: rotate(360deg) .5s;
 }
+ 
+
 /* Hover: Desplegamos elemento aumentando su ancho */
 ul.acordeon li:hover {
   width: 60%; /* 100 - 10*(nºelem-1) // X=60 para ratio imagen */ 
@@ -82,7 +84,10 @@ ul.acordeon li:hover h4 {
 }
 /* Hover: Expandimos el contenido */
 ul.acordeon li:hover a, ul.acordeon li:hover a img {
-  width: 100%; 
+  width: 100%;  
+  transform: rotate(360deg);
+
+
 }
 
 
