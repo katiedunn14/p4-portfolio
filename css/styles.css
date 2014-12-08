@@ -83,13 +83,7 @@ ul.acordeon li:hover h4 {
 ul.acordeon li:hover a, ul.acordeon li:hover a img {
   width: 100%; 
 }
-/* Ajustes para resoluciones pequeñas */
-@media(max-width:600px) {
-  ul.acordeon li h4 {
-    font-size: 12px;
-    letter-spacing: 1px;
-  }
-}
+
 
 /* VARIACIONES PARA CONSEGUIR QUE EL MENU OCUPE INICIALMENTE TODO EL ANCHO 
 ul.acordeon li {
@@ -178,3 +172,18 @@ div.container {
   background: #B1FFA7;
 }
 
+/* Ajustes para resoluciones pequeñas */
+@media(max-width:600px) {
+  ul.acordeon li h4 {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  #logo {
+     display: none;
+  }
+}
