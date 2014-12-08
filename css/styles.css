@@ -10,9 +10,9 @@ ul.acordeon * {
   margin-top: 0px;
   font-family: 'Josefin Sans', sans-serif;
   color: #FF69B5;
-  -webkit-transition: all .6s ease-in-out;
-  -moz-transition: all .6s ease-in-out;
-  transition: all .6s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 /* Contenedor general */
 ul.acordeon {
