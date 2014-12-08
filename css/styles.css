@@ -47,7 +47,7 @@ ul.acordeon li h4 {
   font-size: 25px;
   text-align: left;
   text-transform: uppercase;
-  -webkit-transform: rotate(90deg);
+  -webkit-transform: rotate(360deg);
   -moz-transform: rotate(90deg);
   transform: rotate(90deg);
   -webkit-transform-origin: 10% 120%;
