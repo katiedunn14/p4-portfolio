@@ -36,6 +36,7 @@ ul.acordeon li {
   background: #066600;
   text-align: center;
   box-shadow: -2px 0px 8px #B1FFA7;
+  overflow: hidden;
 }
 /* Títulos pestañas */
 ul.acordeon li h4 {
